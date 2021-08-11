@@ -1,9 +1,11 @@
-## 后端
+### 后端
 
-?> 之前使用了很多的一键式脚本，甚至用完后cpu一直处于 100% 的状态，我产生某些一键式脚本了些怀疑，于是，尽量不用就不用 <br>  所以，使用 docker 安装后端
+-------
+
+?> 之前使用了很多的一键式脚本，甚至用完后cpu一直处于 100% 的状态，让我对某些一键式脚本产生了些忧虑，于是，尽量不用就不用 <br>  所以，使用 docker 安装后端
 
 
-### 安装docker
+#### 安装docker
 
 **CentOS**
 
@@ -63,7 +65,7 @@ systemctl enable docker
 ```
 
 
-### 安装Docker-compose
+#### 安装Docker-compose
 
 ```shell
 curl -fsSL https://get.docker.com | bash -s docker
@@ -76,7 +78,7 @@ chmod +x /usr/local/bin/docker-compose
 
 
 
-### 后端安装
+#### 后端安装
 
 1. `git clone https://github.com/XrayR-project/XrayR-release`
 2. cd XrayR-release/config/
@@ -192,6 +194,18 @@ Nodes:
 
 
 
+
+<br>
+
+
+<br>
+
+
+<br>
+
+-------
+
+<p align="right">最近更新： {docsify-updated}</p>
 
 
 

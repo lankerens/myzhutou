@@ -1,8 +1,10 @@
-## 前端
+### 前端
+
+-----
 
 ?> 就直接按照 https://docs.v2board.com/deploy/aapanel.html 的搭建就好了
 
-### 使用 aapanel 部署
+#### 使用 aapanel 部署
 
 > aaPanel是宝塔(bt.cn)-删库塔的国际版本
 > <br>
@@ -21,19 +23,21 @@ yum install -y wget && wget -O install.sh http://www.aapanel.com/script/install_
 
 选择使用LNMP的环境安装方式勾选如下信息
 
-☑️ Nginx 1.17
-☑️ MySQL 5.6
+☑️ Nginx 1.17 
+
+☑️ MySQL 5.6 
+
 ☑️ PHP 7.3
 
 选择 Fast 快速编译后进行安装。
 
 
-### 安装 redis
+#### 安装 redis
 
 aaPanel 面板 > App Store > 找到PHP 7.3点击Setting > Install extentions > redis 进行安装。
 
 
-### 解除被禁止的函数
+#### 解除被禁止的函数
 
 aaPanel 面板 > App Store > 找到PHP 7.3点击Setting > Disabled functions 
 
@@ -41,7 +45,7 @@ aaPanel 面板 > App Store > 找到PHP 7.3点击Setting > Disabled functions
 
 
 
-### 添加站点
+#### 添加站点
 
 aaPanel 面板 > Website > Add site。
 
@@ -51,7 +55,7 @@ aaPanel 面板 > Website > Add site。
 
 
 
-### 安装 v2b
+#### 安装 v2b
 
 通过SSH登录到服务器后访问站点路径如：/www/wwwroot/你的站点域名。
 
@@ -82,7 +86,7 @@ sh init.sh
 
 
 
-### 配置站点目录及伪静态
+#### 配置站点目录及伪静态
 
 
 1. 添加完成后编辑添加的站点 > Site directory > Running directory 选择 /public 保存。
@@ -107,7 +111,7 @@ location ~ .*\.(js|css)?$
 ```
 
 
-### 配置定时任务
+#### 配置定时任务
 
 aaPanel 面板 > Cron。
 
@@ -120,7 +124,7 @@ aaPanel 面板 > Cron。
 
 
 
-### 启动队列服务
+#### 启动队列服务
 
 
 V2b 的邮件系统强依赖队列服务，你想要使用邮件验证及群发邮件必须启动队列服务。下面以aaPanel中nodejs的PM2服务来守护队列服务作为演示。
@@ -142,9 +146,27 @@ V2b 的邮件系统强依赖队列服务，你想要使用邮件验证及群发�
 
 
 
-### 常见问题
+#### 常见问题
 
-?> Q：500错误
+?> 问题：500错误
  <br>
-A：检查站点根目录权限，递归755，保证目录有可写文件的权限，也有可能是Redis扩展没有安装或者Redis没有按照造成的。你可以通过查看storage/logs下的日志来排查错误或者开启debug模式。
+ <br>
+解决方案：检查站点根目录权限，递归755，保证目录有可写文件的权限，也有可能是Redis扩展没有安装或者Redis没有按照造成的。你可以通过查看storage/logs下的日志来排查错误或者开启debug模式。
 
+
+
+
+
+
+
+<br>
+
+
+<br>
+
+
+<br>
+
+-------
+
+<p align="right">最近更新： {docsify-updated}</p>
