@@ -12,11 +12,53 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
-    }
+	  // 文档标题
+      name: 'MyZhuTou',
+	  
+	  // 侧边导航栏
+	  loadSidebar: true,
+	  // 封面
+	  coverpage: true,
+	  
+	  // 启用相对路径   -- 开了后侧栏点击跳转有问题
+	  //relativePath: true, 
+	  
+	  // 显示文档更新日期
+	  formatUpdated: '{YYYY}.{MM}.{DD} {HH}:{mm}:{ss}',
+	  
+	  // 全文搜索本地化配置
+	  search: {
+		placeholder: '客官想要搜点啥呢？',
+	  }
+	  
+	  
+	
+	}
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!--  全文搜索 - Search  -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  
+  <!--  默认是提供 emoji 解析的，能将类似 :100: 解析成 100。但是它不是精准的，因为没有处理非 emoji 的字符串。如果你需要正确解析 emoji 字符串  -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  
+  <!--  图片缩放 - Zoom image  -->
+  <!--  忽略某张图片  ![](image.png ":no-zoom")  -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  
+  
+  <!--  在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码。  -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  
+  <!--  代码高亮  -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.24.1/components/prism-yaml.min.js"></script>
+   
+  
+  
 </body>
 </html>
