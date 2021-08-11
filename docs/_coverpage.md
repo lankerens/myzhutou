@@ -1,7 +1,7 @@
 <!-- _coverpage.md -->
 
 
-![logo](../_media/icon.svg)
+![logo](/_media/icon.svg)
 
 # MyZhuTou <small>1.5.2</small>
 
