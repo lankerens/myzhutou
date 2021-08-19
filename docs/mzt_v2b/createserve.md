@@ -5,6 +5,46 @@
 ?> 之前使用了很多的一键式脚本，甚至用完后cpu一直处于 100% 的状态，让我对某些一键式脚本产生了些忧虑，于是，尽量不用就不用 <br>  所以，使用 docker 安装后端
 
 
+
+第一步重要
+
+同步时间
+
+Debian/Ubuntu
+
+```shell
+apt-get install -y ntp
+service ntp restart
+```
+
+
+CentOS/RHEL
+
+```shell
+yum -y install ntpdate
+timedatectl set-timezone Asia/Shanghai
+ntpdate ntp1.aliyun.com
+```
+
+关闭防火墙
+
+```shell
+systemctl disable firewalld
+systemctl stop firewalld
+```
+
+
+<br>
+
+
+tips： 有时候 ll 返回说ll命令不支持，那么就通过输入 alisa ll = "ls -l" 来执行。 两个等价的，然后通过ll来简化了 ls -l
+
+
+<br>
+
+
+
+
 #### 安装docker
 
 **CentOS**
@@ -95,6 +135,23 @@ chmod +x /usr/local/bin/docker-compose
 
 
 <br>
+
+
+?> 关于配置trojan节点 时 证书的配置 <br>
+如果你不懂，你就把两个文件都放到config/cert文件夹里面 <br>
+然后文件路径填/etc/XrayR/cert/XXXXXXX  <br>
+就可以正常启动了
+
+（ 好像还要在客户端那里配上允许不安全连接
+
+
+
+
+<br>
+
+
+<br>
+
 
 
 

@@ -120,6 +120,38 @@ lsmod | grep bbr
 <br>
 
 
+
+
+<br>
+
+---------------
+
+
+如果是 CentOS8 / Debain9 / Debain10 的系统
+可以直接安装开启 bbr
+
+1.开启bbr
+
+```shell
+echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+```
+
+2.保存退出后，执行下边的命令使配置生效
+
+```shell
+sysctl -p
+```
+
+3.检查 BBR 是否开启成功
+
+```shell
+sysctl -n net.ipv4.tcp_congestion_control
+lsmod | grep bbr
+```
+
+
+
 <br>
 
 

@@ -3,7 +3,9 @@
 ------
 
 ?> 直接使用一键式脚本 - 多用户管理脚本 <br> <br> 
-地址: https://github.com/Jrohy/multi-v2ray	
+地址: https://github.com/Jrohy/multi-v2ray	 <br>  <br>
+记得要设置时间，与本地同步，如果显示的是12小时制的，转换成24小时制，可以输入 `alias date='date "+%a %b %d %H:%M:%S %Z %Y"'` 执行，然后 date 查看即可。
+
 
 
 <br>
