@@ -257,6 +257,30 @@ Nodes:
 
 <br>
 
+------------------------
+
+
+<br>
+
+一键安装
+
+```shell
+bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
+```
+
+配置文件路径：`/etc/XrayR` 
+
+软件更新 `XrayR update`
+
+
+<br>
+
+
+----------------------
+
+<br>
+
+
 
 <br>
 
