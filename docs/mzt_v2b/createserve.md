@@ -5,6 +5,15 @@
 ?> 之前使用了很多的一键式脚本，甚至用完后cpu一直处于 100% 的状态，让我对某些一键式脚本产生了些忧虑，于是，尽量不用就不用 <br>  所以，使用 docker 安装后端
 
 
+对于一些纯净的系统，很多基本命令都没有
+<br>
+需要<br>
+apt-get update && apt-get install wget curl git -y
+
+有时候apt-get update 会报错， 换成 apt update 执行
+
+
+
 
 第一步重要
 
