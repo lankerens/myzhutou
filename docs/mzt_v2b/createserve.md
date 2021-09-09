@@ -147,7 +147,7 @@ chmod +x /usr/local/bin/docker-compose
 
 
 ?> 关于配置trojan节点 时 证书的配置 <br>
-如果你不懂，你就把两个文件都放到config/cert文件夹里面 <br>
+如果你不懂，你就把两个文件都放到config/cert文件夹  或者 ./cert 文件夹 里面 <br>
 然后文件路径填/etc/XrayR/cert/XXXXXXX  <br>
 就可以正常启动了
 

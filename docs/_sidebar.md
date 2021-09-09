@@ -7,5 +7,7 @@
   - [gost 中转](mzt_v2b/gost.md)
   - [检测奈飞是否解锁](mzt_v2b/nf.md)
   - [监控](mzt_v2b/nezha.md)
+  - [测速脚本](mzt_v2b/speedtest.md)
+  - [应对小cc](mzt_v2b/ccwddos.md)
 
 
