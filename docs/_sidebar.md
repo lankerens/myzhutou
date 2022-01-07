@@ -9,5 +9,7 @@
   - [监控](mzt_v2b/nezha.md)
   - [测速脚本](mzt_v2b/speedtest.md)
   - [应对小cc](mzt_v2b/ccwddos.md)
+  - [metron搭建](mzt_v2b/createmetron.md)
+  - [metron节点](mzt_v2b/metronnode.md)
 
 
