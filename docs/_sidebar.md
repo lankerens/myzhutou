@@ -10,6 +10,7 @@
   - [测速脚本](mzt_v2b/speedtest.md)
   - [应对小cc](mzt_v2b/ccwddos.md)
   - [metron搭建](mzt_v2b/createmetron.md)
-  - [metron节点](mzt_v2b/metronnode.md)
+  - [Shadowsocks-单端口多用户](mzt_v2b/metronnode.md)
+  - [soga后端](mzt_v2b/soga.md)
 
 
