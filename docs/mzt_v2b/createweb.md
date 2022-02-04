@@ -23,18 +23,19 @@ yum install -y wget && wget -O install.sh http://www.aapanel.com/script/install_
 
 选择使用LNMP的环境安装方式勾选如下信息
 
-☑️ Nginx 1.17 
+☑️ Nginx 1.17
 
-☑️ MySQL 5.6 
+☑️ MySQL 5.6
 
-☑️ PHP 7.3
+☑️ PHP 7.4
+
 
 选择 Fast 快速编译后进行安装。
 
 
 #### 安装 redis
 
-aaPanel 面板 > App Store > 找到PHP 7.3点击Setting > Install extentions > redis 进行安装。
+aaPanel 面板 > App Store > 找到PHP 7.4点击Setting > Install extentions > redis,fileinfo 进行安装。
 
 
 #### 解除被禁止的函数
@@ -51,7 +52,7 @@ aaPanel 面板 > Website > Add site。
 
 > 在 Domain 填入你指向服务器的域名   <br>
 > 在 Database 选择MySQL              <br>
-> 在 PHP Verison 选择PHP-73          <br>
+> 在 PHP Verison 选择PHP-74          <br>
 
 
 
@@ -127,21 +128,17 @@ aaPanel 面板 > Cron。
 #### 启动队列服务
 
 
-V2b 的邮件系统强依赖队列服务，你想要使用邮件验证及群发邮件必须启动队列服务。下面以aaPanel中nodejs的PM2服务来守护队列服务作为演示。
+V2board的邮件系统强依赖队列服务，你想要使用邮件验证及群发邮件必须启动队列服务。下面以aaPanel中nodejs的PM2服务来守护队列服务作为演示。
 
+aaPanel 面板 > App Store > Tools
 
-1. aaPanel 面板 > App Store > Deployment
+找到Supervisor进行安装，安装完成后点击设置 > Add Daemon按照如下填写
 
-2. 找到PM2 Manager 4.2.2进行安装，安装完成后按照如下填写
+在 Name 填写 V2board
+在 Run User 选择 www
+在 Run Dir 选择 站点目录 在 Start Command 填写 php artisan horizon 在 Processes 填写 1
 
-> 在 Project root directory 选择站点目录  <br>
-> 在 Startup file name 填写 pm2.yaml   <br> 
-> 在 project name 填写 v2board
-
-填写后点击Add添加即可运行。当然你也可以使用supervisor进行守护。
-
-
-!> 	aaPanel在安装PM2的时候可能会造成问题无法安装，你可以手动进行PM2安装。
+填写后点击Confirm添加即可运行。
 
 
 
