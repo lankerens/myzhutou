@@ -12,5 +12,6 @@
   - [metron搭建](mzt_v2b/createmetron.md)
   - [Shadowsocks-单端口多用户](mzt_v2b/metronnode.md)
   - [soga后端](mzt_v2b/soga.md)
+  - [PM2安装](pm2.md)
 
 
